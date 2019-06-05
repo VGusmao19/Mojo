@@ -1,18 +1,19 @@
-package loja.virtual;
-
 public class Produtos {
     private String name;
     private String description;
     private int amount;
-    private float price;
+    private double price;
     private String category;
+    private String id;
+
     //construtor
-    public Produtos(String name, String description, int amount, float price, String category){
+    public Produtos(String name, String description, int amount, double price, String category, String id){
            this.name = name;
            this.description = description;
            this.amount = amount;
            this.price = price;
            this.category = category;
+           this.id = id;
     }
     
     
@@ -38,11 +39,11 @@ public class Produtos {
       this.amount = amount;
     }
     // price
-    public float getPrice(){
+    public double getPrice(){
         return this.price;
     }
 
-    public void setPrice(float price){
+    public void setPrice(double price){
         this.price = price;
     }
     // category
@@ -52,11 +53,16 @@ public class Produtos {
 
     public void setCategory(String category){
         this.category = category;
-    }    
+    }  
+    // id
+    public String getID() {
+        return id;
+    }
+
+    public void setID(String id) {
+        this.id = id;
+    }
     
 
  
-}
-
-
-
+ }
